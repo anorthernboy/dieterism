@@ -1,0 +1,19 @@
+.rams {
+  background: url(../rams.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 320px;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    height: 295px;
+  }
+  50% {
+    height: 300px;
+  }
+}

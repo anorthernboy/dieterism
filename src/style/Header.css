@@ -1,0 +1,9 @@
+.header {
+  background: url(../header.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 20px;
+  width: 300px;
+  margin: 10px;
+}
