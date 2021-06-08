@@ -6,16 +6,16 @@ import { quotes } from "../quote-data.js";
 import "../style/App.css";
 
 class App extends Component {
-  state = { quote: "less, but better" };
+  state = { quoteId: 0, quote: "less, but better" };
 
   render() {
     console.log(this.state.quote);
-    const { quote } = this.state;
+    const { quoteId, quote } = this.state;
     return (
       <div className="app">
         <Header />
         <Quote quote={quote} />
-        <Rams click={this.newQuote} />
+        <Rams quoteId={quoteId} click={this.newQuote} />
       </div>
     );
   }
@@ -25,7 +25,7 @@ class App extends Component {
     const quoteId = Math.floor(Math.random() * Math.floor(quotes.length));
     if (this.state.quote !== quotes[quoteId][quoteId]) {
       const quote = quotes[quoteId][quoteId];
-      this.setState({ quote });
+      this.setState({ quoteId, quote });
     }
   };
 }
