@@ -11,7 +11,13 @@ const Rams = ({ quoteId, click }) => {
          background: quoteId < 8 ? `url(${RamsImg})` :
                       quoteId < 16 ? `url(${RamsImgOne})` :
                       quoteId < 24 ? `url(${RamsImgTwo})` :
-                      `url(${RamsImgThree})`
+                      `url(${RamsImgThree})`,
+         backgroundSize: 'contain',
+         backgroundPosition: 'center',
+         backgroundRepeat: 'no-repeat',
+         height: '300px',
+         width: '320px',
+         animation: 'pulse 1.5s infinite'
         }}
   />;
 };
