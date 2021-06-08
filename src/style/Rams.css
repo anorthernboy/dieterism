@@ -8,6 +8,10 @@
   animation: pulse 1.5s infinite;
 }
 
+.rams:hover {
+  cursor: pointer;
+}
+
 @keyframes pulse {
   0%,
   100% {
