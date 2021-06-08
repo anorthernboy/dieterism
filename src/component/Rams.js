@@ -1,9 +1,9 @@
 import React from "react";
 import "../style/Rams.css";
-import Rams from "../rams.jpg;
-import RamsOne from "../rams-one.jpg;
-import RamsTwo from "../rams-two.jpg;
-import RamsThree from "../rams-three.jpg;
+import Rams from "../rams.jpg";
+import RamsOne from "../rams-one.jpg";
+import RamsTwo from "../rams-two.jpg";
+import RamsThree from "../rams-three.jpg";
 
 const Rams = ({ quoteId, click }) => {
   return <div className="rams" onClick={click} 
