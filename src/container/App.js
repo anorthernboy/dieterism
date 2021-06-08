@@ -22,7 +22,10 @@ class App extends Component {
 
   newQuote = event => {
     event.preventDefault();
-    const quoteId = Math.floor(Math.random() * Math.floor(quotes.length));
+    const quoteId = this.state.quoteId < 8 ? Math.floor(Math.random() * (30 - 8 + 1) + 8) :
+                    this.state.quoteId < 16 ? Math.floor(Math.random() * (30 - 16 + 1) + 16) :
+                    this.state.quoteId < 24 ? Math.floor(Math.random() * (16 - 0 + 1) + 0) :
+                    Math.floor(Math.random() * (24 - 0 + 1) + 0);
     if (this.state.quote !== quotes[quoteId][quoteId]) {
       const quote = quotes[quoteId][quoteId];
       this.setState({ quoteId, quote });
