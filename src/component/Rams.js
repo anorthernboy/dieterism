@@ -1,17 +1,17 @@
 import React from "react";
 import "../style/Rams.css";
-import Rams from "../rams.jpg";
-import RamsOne from "../rams-one.jpg";
-import RamsTwo from "../rams-two.jpg";
-import RamsThree from "../rams-three.jpg";
+import RamsImg from "../rams.jpg";
+import RamsImgOne from "../rams-one.jpg";
+import RamsImgTwo from "../rams-two.jpg";
+import RamsImgThree from "../rams-three.jpg";
 
 const Rams = ({ quoteId, click }) => {
   return <div className="rams" onClick={click} 
     style={{
-         background: quoteId < 8 ? `url(${Rams})` :
-                      quoteId < 16 ? `url(${RamsOne})` :
-                      quoteId < 24 ? `url(${RamsTwo})` :
-                      `url(${RamsThree})`
+         background: quoteId < 8 ? `url(${RamsImg})` :
+                      quoteId < 16 ? `url(${RamsImgOne})` :
+                      quoteId < 24 ? `url(${RamsImgTwo})` :
+                      `url(${RamsImgThree})`
         }}
   />;
 };
