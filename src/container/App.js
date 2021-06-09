@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-// import Header from "../component/Header.js";
 import Quote from "../component/Quote.js";
 import Rams from "../component/Rams.js";
 import { quotes } from "../quote-data.js";
@@ -13,7 +12,6 @@ class App extends Component {
     const { quoteId, quote } = this.state;
     return (
       <div className="app">
-        // <Header />
         <Quote quote={quote} />
         <Rams quoteId={quoteId} click={this.newQuote} />
       </div>
